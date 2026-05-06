@@ -1,9 +1,17 @@
 import streamlit as st
 import pickle
 
-# 1. تحميل الموديل والفيكتورايزر اللذين حفظناهما سابقاً
-model = pickle.load(open('sentiment_model.pkl', 'rb'))
-vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
+import os
+
+# الحصول على المسار الحالي للملف
+base_path = os.path.dirname(__file__)
+
+# تحميل الموديل باستخدام المسار الكامل
+model_path = os.path.join(base_path, 'Sentiment_model.pkl')
+vector_path = os.path.join(base_path, 'vectorizer.pkl')
+
+model = pickle.load(open(model_path, 'rb'))
+vectorizer = pickle.load(open(vector_path, 'rb'))
 
 # 2. إعداد واجهة المستخدم (UI)
 st.set_page_config(page_title="Amazon Review Analyzer", page_icon="🛍️")
