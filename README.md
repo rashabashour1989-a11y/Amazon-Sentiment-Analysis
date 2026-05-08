@@ -1,28 +1,26 @@
-# Amazon Prpduct Reviews Sentiment Analysis
-## Overview
-   This project is a **Sentiment Analysis Engine** traind on Amazon product reviews. It uses Machine Learning to classify user feedback into **Positive** or **Negative** category with high precision.
-## Features
-   + **Text Preprocessing :** Custom cleaning pipeline (Lowercasing, Special characters removal, Stopwords handling).
-   + **Vectorization :** Implemented **TF-IDF** (Term Frequency-Inverse Document Frequency) to convert text into meaningful numerical data.
-   + **Model :** Trained using **Logistic Regression** , achieving ab accuracy of approximately **93.99%**.
-   + **Interactive Inference :** Includes a function to test custom reviews in real-time.
-## Data Insights
-   + **Initial Dataset :** Thousand of real Amazon reviews.
-   + **Class Distribution :** The dataset showed a significant skew towards negative reviews (8419 Negative vs 1227 Positive), which helped the model become highly sensitive to critical feedback.
-   + **The Neutral Choice :** During preprocessing, 3-star reviews were excluded to create a clear binary classification (Highly Positive vs Highlt Negative).
-## Installation & Usage
-   1. Clone the repository
-      git clone https://github.com/rashabashour1989-a11y/amazon-sentiment-analysis.git
-   2. Install dependencies:
-      pip install pandas scikit-learn
-      matplotlib seaborn wordcloud
-   3. Run the Jupyter Notebook Amazon_Sentiment_Analysis.ipynb
-## Example Test
-   **Input :** 'The product is amazing !'
-   
-   **Output :** Positive
-   
-   **Input :** 'The color is different from the picture'
-   
-   **Output :** Negative
-    
+# Amazon Sentiment Analysis Project 🚀
+
+This project is a web-based application built with **Streamlit** that predicts the sentiment of Amazon product reviews using Machine Learning.
+
+## 🌟 Key Features
+- **Balanced Dataset:** Handled data imbalance (1227 Positive vs 8400 Negative) using Under-sampling to ensure fair predictions.
+- **Advanced NLP:** Used `TfidfVectorizer` with `N-grams (1, 3)` to understand context like "not bad".
+- **Strong Model:** Implemented `RandomForestClassifier` for higher accuracy and better handling of complex phrases.
+- **Interactive UI:** A clean and simple web interface for real-time sentiment prediction.
+
+## 🛠️ Technologies Used
+- **Python**
+- **Scikit-learn** (RandomForest, TF-IDF)
+- **Pandas** (Data Manipulation)
+- **Streamlit** (Web Framework)
+- **Pickle** (Model Serialization)
+
+## 📊 Model Performance
+After balancing the dataset and optimizing the N-grams, the model achieved:
+- **Accuracy:** ~82.1% (Balanced Accuracy)
+- **Context Awareness:** Successfully identifies negations like "not bad" as Positive.
+
+## 🚀 How to Run Locally
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
