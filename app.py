@@ -4,6 +4,7 @@ import re
 import os
 import nltk
 from nltk.corpus import stopwords
+from sklearn.ensemble import RandomForestClassifier
 
 # Download stopwords for the Cloud environment
 nltk.download('stopwords')
