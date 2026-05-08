@@ -17,10 +17,17 @@ This project is a web-based application built with **Streamlit** that predicts t
 
 ## 📊 Model Performance
 After balancing the dataset and optimizing the N-grams, the model achieved:
-- **Accuracy:** ~82.1% (Balanced Accuracy)
+- **Accuracy:** ~82.69% (Balanced Accuracy)
 - **Context Awareness:** Successfully identifies negations like "not bad" as Positive.
 
 ## 🚀 How to Run Locally
 1. Clone the repository:
    ```bash
    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the app:
+   ```bash
+   streamlit run app.py
